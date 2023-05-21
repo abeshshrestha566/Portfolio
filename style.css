@@ -1,0 +1,219 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+a,p,ul,li,span{
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 26px;
+  text-align: center;  
+  border-bottom: 1px solid #777;
+  padding: 10px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+header nav a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-right: 1px;
+  padding: 10px;
+}
+.active,nav a:hover {
+  background: #ccc;
+  color: #000;
+}
+nav{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+main {
+  padding: 20px;
+}
+ 
+
+.homemain{
+  background-color: rgb(0, 0, 33);
+
+}
+
+#homesection{  
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:92px 0;
+  padding: 1px;
+}
+.homesection div{
+  width: 30%;
+}
+
+.leftSection{
+  font-size: 3rem ;
+  color: white;
+  margin: 70px 0;
+}
+
+.rightSection img{
+  width: 80%;  
+  margin: 50px 0;
+  height: 200px;
+}
+
+
+
+#about {
+ background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+.heading{
+  font-size:50px;
+  padding:20px 0;
+}
+#about p{
+  font-size:20px;
+}
+
+#about img {
+  width:400px;
+  border:10px solid #333;
+  height: 500px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.btn{
+  background: #333;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+} 
+.btn a{
+  color:#fff;
+
+}
+
+
+.skill-info {
+  width: 500px;
+  margin:0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+  .skill-info h2 {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  }
+
+  .skill-info ul {
+  margin: 20px ;
+  padding: 20px ;
+  }
+
+  .skill-info li {
+  margin-bottom: 20px;
+}
+
+.skill-info img {
+  width: 250px;
+  margin: 20px;
+}
+
+#skills .all-skills{
+  display: flex;
+}
+
+
+img{ 
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  padding: 4px;
+}
+
+img:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+#Image{
+flex-grow:5;
+}
+
+
+.interest-info{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: row;
+transition: step-end;
+}
+#interest p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: large;
+}
+
+
+
+#contact {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info li a {
+  color: blue;
+  text-decoration: none;
+}
+
+.contact-info li a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+#about{
+  flex-direction: column;
+}
+}
